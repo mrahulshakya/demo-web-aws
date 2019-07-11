@@ -1,0 +1,32 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "contrywebapp-20190404153707-authRole",
+            "UnauthRoleArn": "arn:aws:iam::993343851857:role/contrywebapp-20190404153707-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::993343851857:role/contrywebapp-20190404153707-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "contrywebapp-20190404153707-deployment",
+            "UnauthRoleName": "contrywebapp-20190404153707-unauthRole",
+            "StackName": "contrywebapp-20190404153707",
+            "StackId": "arn:aws:cloudformation:us-west-2:993343851857:stack/contrywebapp-20190404153707/6823e310-56c1-11e9-a8c2-02a5b7e2d79e"
+        }
+    },
+    "hosting": {
+        "S3AndCloudFront": {
+            "service": "S3AndCloudFront",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/contrywebapp-20190404153707-deployment/amplify-cfn-templates/hosting/template.json",
+                "logicalId": "hostingS3AndCloudFront"
+            },
+            "lastPushTimeStamp": "2019-04-04T10:35:41.946Z",
+            "output": {
+                "S3BucketSecureURL": "https://country-bucket-final-test.s3.amazonaws.com",
+                "WebsiteURL": "http://country-bucket-final-test.s3-website-us-west-2.amazonaws.com",
+                "Region": "us-west-2",
+                "HostingBucketName": "country-bucket-final-test"
+            },
+            "lastPushDirHash": "x1DFOPZeujDabsn061ghbswFn1U="
+        }
+    }
+}
